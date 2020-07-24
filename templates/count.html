@@ -1,0 +1,14 @@
+<h1>There are {{count}}words</h1>
+
+<a href="{% url 'eggs'%}">start Again </a>
+<h1>Entred full text:</h1>
+{{fulltext}}
+<br>
+<br>
+<h1>Word Count </h1>
+{% for word, counttotal in wordict %}
+
+{{word}}
+{{counttotal}}
+<br>
+{% endfor %}
